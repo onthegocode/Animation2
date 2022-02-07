@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+
+#logo {
+  width: 100vw;
+  height: 100vh;
+  stroke: red !important;
+
+  animation-name: line-anim;
+  animation-duration: 100s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+#logo path {
+  stroke-dasharray: 72225;
+  stroke-dashoffset: 72225;
+  animation-name: line-anim;
+  animation-duration: 250s;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  stroke: red;
+  stroke-width: 1px;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
